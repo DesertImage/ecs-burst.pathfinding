@@ -1,0 +1,11 @@
+  {
+    "name": "com.desertimage.ecs-burst.pathfinding",
+    "version": "0.0.1",
+    "displayName": "ESC-Burst.Pathfinding",
+    "description": "",
+    "unity": "2020.3",
+    "keywords": [],
+    "dependencies": {
+      "com.unity.burst": "1.6.6"
+  }
+}

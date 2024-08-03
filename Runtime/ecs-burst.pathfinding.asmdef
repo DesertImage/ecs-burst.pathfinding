@@ -1,0 +1,19 @@
+{
+    "name": "ecs-burst.pathfinding",
+    "rootNamespace": "",
+    "references": [
+        "DesertImage.ECS",
+        "Unity.Mathematics",
+        "DesertImage.ECS.Basic",
+        "Unity.Burst"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

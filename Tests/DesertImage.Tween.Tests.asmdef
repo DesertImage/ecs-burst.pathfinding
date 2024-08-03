@@ -1,0 +1,23 @@
+{
+    "name": "ecs-burst.pathfinding.tests",
+    "rootNamespace": "",
+    "references": [
+        "DesertImage.ECS",
+        "Unity.Mathematics",
+        "DesertImage.ECS.Basic",
+        "ecs-burst.pathfinding"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
