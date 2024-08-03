@@ -32,7 +32,7 @@ namespace GameTests.Pathfinding
 
             var entity = world.GetNewEntity();
 
-            var actor = new NavigationActor
+            var actor = new PathfindingActor
             {
                 Nodes = new UnsafeArray<PathNode>(MapSize, Allocator.Persistent),
                 Path = new UnsafeStack<int>(10, Allocator.Persistent)
@@ -64,7 +64,7 @@ namespace GameTests.Pathfinding
             world.Add<AStarPathfindingSystem>();
             world.Tick(.1f);
 
-            var path = entity.Read<NavigationActor>().Path;
+            var path = entity.Read<PathfindingActor>().Path;
             
             Assert.AreEqual(5, path.Count);
             Assert.AreEqual(new Vector2Int(1, 0), actor.Nodes[path.Pull()].GridPosition);
