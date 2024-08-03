@@ -1,6 +1,6 @@
   {
     "name": "com.desertimage.ecs-burst.pathfinding",
-    "version": "0.0.2",
+    "version": "0.0.21",
     "displayName": "ESC-Burst.Pathfinding",
     "description": "",
     "unity": "2020.3",
@@ -14,7 +14,7 @@
         {
             "displayName": "Basic",
             "description": "Basic pathfinding logic. Target cell defined in ",
-            "path": "Samples/Basic"
+            "path": "Samples~/Basic"
         }
     ]
 }
