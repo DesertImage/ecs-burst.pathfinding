@@ -16,7 +16,7 @@ namespace Game.Navigation
         {
             _group = Filter.Create(world)
                 .With<GridPosition>()
-                .With<NavigationActor>()
+                .With<PathfindingActor>()
                 .With<FindPath>()
                 .Find();
         }
@@ -29,7 +29,7 @@ namespace Game.Navigation
             {
                 Entities = _group.Values,
                 GridPositionsList = _group.GetComponents<GridPosition>(),
-                NavActorsList = _group.GetComponents<NavigationActor>(),
+                NavActorsList = _group.GetComponents<PathfindingActor>(),
                 FindPathList = _group.GetComponents<FindPath>(),
                 NodesWalkableState = pathfinding.NodesWalkableState,
                 MapWidth = pathfinding.MapWidth,
@@ -50,7 +50,7 @@ namespace Game.Navigation
             public UnsafeReadOnlyArray<uint> Entities;
 
             public UnsafeUintReadOnlySparseSet<GridPosition> GridPositionsList;
-            public UnsafeUintReadOnlySparseSet<NavigationActor> NavActorsList;
+            public UnsafeUintReadOnlySparseSet<PathfindingActor> NavActorsList;
             public UnsafeUintReadOnlySparseSet<FindPath> FindPathList;
 
             public UnsafeArray<byte> NodesWalkableState;
