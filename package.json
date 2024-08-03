@@ -5,14 +5,16 @@
     "description": "",
     "unity": "2020.3",
     "keywords": [],
-    "dependencies": {
+    "dependencies": 
+    {
       "com.unity.burst": "1.6.6"
-  },
-  "samples": [
+    },
+    "samples": 
+    [
         {
             "displayName": "Basic",
             "description": "Basic pathfinding logic. Target cell defined in ",
             "path": "Samples~/Basic"
-        },
-      ]
+        }
+    ]
 }
